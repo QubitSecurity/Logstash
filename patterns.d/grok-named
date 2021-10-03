@@ -1,0 +1,6 @@
+# Named stuff
+TIMENAMED %{MONTHDAY}[-]%{MONTH}[-]%{YEAR}\s*%{TIME}
+
+NAMED %{WORD:queries}[:]\s*%{WORD:info}[:]\s*%{WORD:client}\s*%{DATA:client_data}\s*%{IP:client_ip}[#]%{NUMBER:client_port}\s*\(%{HOSTNAME}\)[:]\s*query:\s*%{HOSTNAME:query_value}\s*%{WORD}\s*%{WORD:record_type}\s*%{NOTSPACE:misc}\s*\(%{IP:destination}\)
+
+PLURANAMED %{TIMENAMED:timestamp} %{NAMED}
