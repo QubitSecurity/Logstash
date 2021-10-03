@@ -1,5 +1,5 @@
 # Add for PLURA log format
 # path /etc/logstash/patterns.d/
-PLURAAPACHELOG %{IPORHOST:Remote-addr} %{USER:ident} %{USER:auth} \[%{HTTPDATE:Request-date}\] "(?:%{WORD:Method} %{NOTSPACE:Uri}(?: HTTP/%{NUMBER:Version})?|%{DATA:rawrequest})" %{NUMBER:Status} (?:%{NUMBER:Resp-Content-Length}|-)
+PLURAAPACHELOG %{IPORHOST:Remote-addr} %{USER:ident} %{USER:auth} \[%{HTTPDATE:Request-date}\] \"(?:%{WORD:Method} %{NOTSPACE:Uri}(?: HTTP/%{NUMBER:Version})?|%{DATA:rawrequest})\" %{NUMBER:Status} (?:%{NUMBER:Resp-Content-Length}|-)
 
 PLURACOMBINEDAPACHELOG %{PLURAAPACHELOG} %{QS:Refere} %{QS:User-Agent}
