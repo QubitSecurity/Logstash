@@ -1,4 +1,6 @@
 # DHCPD stuff
+### https://github.com/ninech/logstash-patterns
+
 DHCPD_VIA via (%{IP:dhcp_relay_ip}|(?<dhcp_device>[^: ]+))
 
 DHCPD_OPERATION DHCP(%{DHCPD_DISCOVER}|%{DHCPD_OFFER_ACK}|%{DHCPD_REQUEST}|%{DHCPD_DECLINE}|%{DHCPD_RELEASE}|%{DHCPD_INFORM}|%{DHCPD_LEASE})(: %{GREEDYDATA:dhcpd_message})?
