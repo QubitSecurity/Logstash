@@ -1,21 +1,52 @@
 # Logstash
 logstash for PLURA
 
+## 1. Install Logstash
 
-## 1. RUN
+### 1.1 Install OpenJDK 11.x
 
-### 1.1 run in foreground
+    yum -y install java-11-openjdk java-11-openjdk-devel
+    
+    cat > /etc/profile.d/java11.sh <<EOF
+    export JAVA_HOME=$(dirname $(dirname $(readlink $(readlink $(which javac)))))
+    export PATH=\$PATH:\$JAVA_HOME/bin
+    EOF
+    
+    source /etc/profile.d/java11.sh
+    
+    java --version
+    
+    alternatives --config java
+    
+### 1.2 Install Logstash
+
+    cat > /etc/yum.repos.d/elasticsearch.repo <<EOF
+    [elasticsearch-7.x]
+    name=Elasticsearch repository for 7.x packages
+    baseurl=https://artifacts.elastic.co/packages/7.x/yum
+    gpgcheck=1
+    gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+    enabled=1
+    autorefresh=1
+    type=rpm-md
+    EOF
+
+    yum -y install logstash
+
+## 2. RUN Logstash
+
+### 2.1 run in foreground
 
     /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf 
 
-### 1.2 run in background
+### 2.2 run in background
 
     nohup /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf > /var/log/plura/app-postfix-nohup.log 2>&1 &
 
 
-## 2.1 test_db
+## 3.1 Example
 
-### sample code
+### sample code with test_db
 
     INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(120022, '1964-12-31', 'eliot', 'PLURA', 'M', '1984-12-31');
     
