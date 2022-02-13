@@ -1,7 +1,11 @@
 # Logstash
 logstash for PLURA
 
-## 1.1 test_db
+## 1.0 run
+
+    /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf 
+
+## 2.1 test_db
 
 ### sample code
 
