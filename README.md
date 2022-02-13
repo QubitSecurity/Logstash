@@ -1,9 +1,17 @@
 # Logstash
 logstash for PLURA
 
-## 1.0 run
+
+## RUN
+
+### 1.1 run in foreground
 
     /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf 
+
+### 1.2 run in background
+
+    nohup /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf > /var/log/plura/app-postfix-nohup.log 2>&1 &
+
 
 ## 2.1 test_db
 
