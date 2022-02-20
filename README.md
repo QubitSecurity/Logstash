@@ -47,6 +47,7 @@ logstash for PLURA
 ## 3. Example
 
 ### 3.1 sample code with test_db
+#### https://github.com/datacharmer/test_db
 
     INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(120022, '1964-12-31', 'eliot', 'PLURA', 'M', '1984-12-31');
     
