@@ -59,3 +59,4 @@ logstash for PLURA
 
 ## X. Reference
 #### https://logz.io/blog/debug-logstash/
+#### https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
