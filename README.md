@@ -55,3 +55,7 @@ logstash for PLURA
     INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(120022, '1964-12-31', 'eliot', 'PLURA', 'M', '1984-12-31');
     
     INSERT INTO dept_manager(emp_no, dept_no, from_date, to_date) VALUES(120022, 'd009', '1984-12-31', '1988-10-17');
+
+
+## X. Reference
+#### https://logz.io/blog/debug-logstash/
