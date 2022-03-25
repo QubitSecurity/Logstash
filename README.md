@@ -43,10 +43,13 @@ logstash for PLURA
 
     nohup /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf > /var/log/plura/app-postfix-nohup.log 2>&1 &
 
+## 3. Testing configuration
+ 
+    /usr/share/logstash/bin/logstash --config.test_and_exit -f /etc/logstash/conf.d/70-postfix-plura.conf
 
-## 3. Example
+## 4. Example
 
-### 3.1 sample code with test_db
+### 4.1 sample code with test_db
 #### https://github.com/datacharmer/test_db
 
     INSERT INTO employees(emp_no, birth_date, first_name, last_name, gender, hire_date) VALUES(120022, '1964-12-31', 'eliot', 'PLURA', 'M', '1984-12-31');
