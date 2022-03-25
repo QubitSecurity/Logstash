@@ -46,6 +46,8 @@ logstash for PLURA
 ## 3. Testing configuration
  
     /usr/share/logstash/bin/logstash --config.test_and_exit -f /etc/logstash/conf.d/70-postfix-plura.conf
+    
+    /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf --path.settings /etc/logstash/
 
 ## 4. Example
 
