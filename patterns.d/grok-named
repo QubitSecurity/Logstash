@@ -1,6 +1,24 @@
 # Named stuff
-TIMENAMED %{MONTHDAY}[-]%{MONTH}[-]%{YEAR}\s*%{TIME}
+# https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
 
-NAMED %{WORD:queries}[:]\s*%{WORD:info}[:]\s*%{WORD:client}\s*%{DATA:client_data}\s*%{IP:client_ip}[#]%{NUMBER:client_port}\s*\(%{HOSTNAME}\)[:]\s*query:\s*%{HOSTNAME:query_value}\s*%{WORD}\s*%{WORD:record_type}\s*%{NOTSPACE:misc}\s*\(%{IP:destination}\)
+# 26-Mar-2022 10:06:50.943 queries: info: client @0x7fe5ec0d4460 192.168.20.184#51211 (181.21.16.171.in-addr.arpa): view internal: query: 181.21.16.171.in-addr.arpa IN PTR + (172.16.20.180)
 
-PLURANAMED %{TIMENAMED:timestamp} %{NAMED}
+BIND9_TIMESTAMP %{MONTHDAY}[-]%{MONTH}[-]%{YEAR} %{TIME}
+
+BIND9_DNSTYPE (?:A|AAAA|CAA|CDNSKEY|CDS|CERT|CNAME|CSYNC|DLV|DNAME|DNSKEY|DS|HINFO|LOC|MX|NAPTR|NS|NSEC|NSEC3|OPENPGPKEY|PTR|RRSIG|RP|SIG|SMIMEA|SOA|SRV|TSIG|TXT|URI)
+
+BIND9_CATEGORY (?:queries)
+
+###BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:[client][ip]}#%{POSINT:[client][port]:int} \(%{GREEDYDATA:[bind][log][question][name]}\): query: %{GREEDYDATA:[dns][question][name]} (?<[dns][question][class]>IN) %{BIND9_DNSTYPE:[dns][question][type]}(:? %{DATA:[bind][log][question][flags]})? \(%{IP:[server][ip]}\)
+
+#BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clientport:int} \(%{GREEDYDATA:clientname}\): view internal: query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:type}(:? %{DATA:flags})? \(%{IP:DNS}\)
+
+BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clientport:int} \(%{GREEDYDATA:clientname}\): view internal: query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:TYPE}(:? %{DATA:FLAGS})? \(%{IP:DNS}\)
+
+# for query-logging category and severity are always fixed as "queries: info: "
+###BIND9_QUERYLOG %{BIND9_TIMESTAMP:timestamp} %{BIND9_CATEGORY:[bind][log][category]}: %{LOGLEVEL:[log][level]}: %{BIND9_QUERYLOGBASE}
+
+BIND9_QUERYLOG %{BIND9_TIMESTAMP:timestamp} %{BIND9_CATEGORY:CATEGORY}: %{LOGLEVEL:LEVEL}: %{BIND9_QUERYLOGBASE}
+
+###BIND9 %{BIND9_QUERYLOG}
+PLURANAMED %{BIND9_QUERYLOG}
