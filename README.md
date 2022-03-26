@@ -60,6 +60,7 @@ logstash for PLURA
 
 
 ## X. Reference
+##### https://logz.io/blog/logstash-grok/
 ##### https://logz.io/blog/debug-logstash/
 ##### https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
 ##### https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
