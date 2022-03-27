@@ -35,15 +35,15 @@ logstash for PLURA
 
 ## 2. RUN Logstash
 
-### 2.1 run in foreground
+### 2.1 run in foreground using postfix
 
     /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf 
 
-### 2.2 run in background
+### 2.2 run in background using postfix
 
     nohup /usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/70-postfix-plura.conf > /var/log/plura/app-postfix-nohup.log 2>&1 &
 
-## 3. Testing configuration
+## 3. Testing configuration using postfix
  
     /usr/share/logstash/bin/logstash --config.test_and_exit -f /etc/logstash/conf.d/70-postfix-plura.conf
     
