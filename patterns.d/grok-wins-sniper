@@ -1,0 +1,3 @@
+WINSSNIPER %{CISCOTIMESTAMP:DATE1} %{IP:HOST} %{SPACE} \[SNIPER-%{INT:SNIPER}\] \[Attack_Name=\(%{INT:Attack_cord}\)%{GREEDYDATA:Attack_reason}\], \[Time=%{YEAR:tYEAR}/%{MONTHNUM:tMONTHNUM}/%{MONTHDAY:tMONTHDAY} %{HOUR:tHOUR}:%{MINUTE:tMINUTE}:%{SECOND:tSECOND}\], \[Hacker=%{IP:Hacker}\], \[Victim=%{IP:Victim}\], \[Protocol=%{WORD:Protocol}/%{INT:Port}\], \[Risk=%{WORD:Risk}\], \[Handling=%{WORD:Handling}\], \[Information=%{WORD:1}\[%{GREEDYDATA:2}\],(%{GREEDYDATA:3})\], \[SrcPort=%{INT:SrcPort}\], \[HackType=%{INT:HackType}\]
+
+PLURAWINSSNIPER %{WINSSNIPER}
