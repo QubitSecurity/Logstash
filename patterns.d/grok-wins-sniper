@@ -1,3 +1,11 @@
+# Wins'Sniper IPS stuff
+
+# Type-1
+# Mar 27 11:34:57 172.17.1.100  [SNIPER-0001] [Attack_Name=(0111)ACK Port Scan(F/W Scan)], [Time=2022/03/27 11:34:57], [Hacker=172.17.1.133], [Victim=172.17.1.143], [Protocol=tcp/58256], [Risk=Medium], [Handling=Alarm], [Information=IpPool[Non-IPPOOL],], [SrcPort=1526], [HackType=00002]
+
+# Type-2
+# Mar 27 11:34:57 172.17.1.100  [SNIPER-0001] [Attack_Name=(0111)ACK Port Scan(F/W Scan)], [Time=2022/03/27 11:34:57], [Hacker=172.17.1.133], [Victim=172.17.1.143], [Protocol=tcp/58256], [Risk=Medium], [Handling=Alarm], [Information=IpPool[Non-IPPOOL],(h:ANDRO/MOBILE/CHROM)(v:ORACL)], [SrcPort=1526], [HackType=00002]
+
 WINSSNIPER %{CISCOTIMESTAMP:DATE1} %{IP:HOST} %{SPACE} \[SNIPER-%{INT:SNIPER}\] \[Attack_Name=\(%{INT:Attack_cord}\)%{GREEDYDATA:Attack_reason}\], \[Time=%{YEAR:tYEAR}/%{MONTHNUM:tMONTHNUM}/%{MONTHDAY:tMONTHDAY} %{HOUR:tHOUR}:%{MINUTE:tMINUTE}:%{SECOND:tSECOND}\], \[Hacker=%{IP:Hacker}\], \[Victim=%{IP:Victim}\], \[Protocol=%{WORD:Protocol}/%{INT:Port}\], \[Risk=%{WORD:Risk}\], \[Handling=%{WORD:Handling}\], \[Information=%{WORD:1}\[%{GREEDYDATA:2}\],(%{GREEDYDATA:3})\], \[SrcPort=%{INT:SrcPort}\], \[HackType=%{INT:HackType}\]
 
 PLURAWINSSNIPER %{WINSSNIPER}
