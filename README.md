@@ -60,10 +60,10 @@ logstash for PLURA
 
 
 ## X. Reference
-##### https://logz.io/blog/logstash-grok/
-##### https://logz.io/blog/debug-logstash/
-##### https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
-##### https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
+##### 1)  https://logz.io/blog/logstash-grok/
+##### 2) https://logz.io/blog/debug-logstash/
+##### 3) https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
+##### 4) https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
 
-##### https://grokdebug.herokuapp.com/
-##### https://jsoneditoronline.org/
+##### 5) https://grokdebug.herokuapp.com/
+##### 6) https://jsoneditoronline.org/
