@@ -82,4 +82,5 @@ logstash for PLURA
 ##### 7) https://www.utctime.net/
 ##### 8) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
 ##### 9) https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html
-##### 10) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
+##### 10) https://www.elastic.co/guide/en/logstash/current/plugins-filters-date.html
+##### 11) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
