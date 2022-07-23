@@ -77,7 +77,7 @@ logstash for PLURA
 ##### 5) https://grokdebug.herokuapp.com/
 ##### 6) https://jsoneditoronline.org/
 
-#### X.2 Date formate
+#### X.2 Date format
 
 ##### 7) https://www.utctime.net/
 ##### 8) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
