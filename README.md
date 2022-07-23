@@ -33,6 +33,13 @@ logstash for PLURA
 
     yum -y install logstash
 
+### 1.3 Install plugin using date_formatter
+
+    /usr/share/logstash/bin/logstash-plugin install logstash-filter-date_formatter
+    
+    /usr/share/logstash/bin/logstash-plugin list logstash-filter-date_formatter
+
+
 ## 2. RUN Logstash
 
 ### 2.1 run in foreground using postfix
@@ -70,3 +77,6 @@ logstash for PLURA
 
 ##### 7) https://www.utctime.net/
 ##### 8) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
+
+##### 9) https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html
+##### 10) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
