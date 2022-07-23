@@ -67,16 +67,19 @@ logstash for PLURA
 
 
 ## X. Reference
+
+#### X.1 Grok & Debug
+
 ##### 1)  https://logz.io/blog/logstash-grok/
 ##### 2) https://logz.io/blog/debug-logstash/
 ##### 3) https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
 ##### 4) https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
-
 ##### 5) https://grokdebug.herokuapp.com/
 ##### 6) https://jsoneditoronline.org/
 
+#### X.2 Date formate
+
 ##### 7) https://www.utctime.net/
 ##### 8) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
-
 ##### 9) https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html
 ##### 10) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
