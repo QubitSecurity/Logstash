@@ -72,15 +72,16 @@ logstash for PLURA
 
 ##### 1)  https://logz.io/blog/logstash-grok/
 ##### 2) https://logz.io/blog/debug-logstash/
-##### 3) https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
-##### 4) https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
-##### 5) https://grokdebug.herokuapp.com/
-##### 6) https://jsoneditoronline.org/
+##### 3) https://logz.io/blog/grok-pattern-examples-for-log-parsing/
+##### 4) https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
+##### 5) https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
+##### 6) https://grokdebug.herokuapp.com/
+##### 7) https://jsoneditoronline.org/
 
 #### X.2 Date format
 
-##### 7) https://www.utctime.net/
-##### 8) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
-##### 9) https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html
-##### 10) https://www.elastic.co/guide/en/logstash/current/plugins-filters-date.html
-##### 11) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
+##### 8) https://www.utctime.net/
+##### 9) https://www.javacodegeeks.com/processing-real-time-data-with-storm-kafka-and-elasticsearch-part-4.html
+##### 10) https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html
+##### 11) https://www.elastic.co/guide/en/logstash/current/plugins-filters-date.html
+##### 12) https://www.ibm.com/docs/en/oala/1.3.6?topic=logstash-configuration-file-reference
