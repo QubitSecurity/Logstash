@@ -1,0 +1,8 @@
+# Add for PLURA log format
+
+TOMUSERNAME [a-zA-Z\.\@\-\+_%]+
+TOMUSER %{TOMUSERNAME}
+
+TOMLECACY %{IPORHOST:Remoteaddr} %{TOMUSER:ident} %{TOMUSER:auth} %{SYSLOG5424SD:Requestdate} "%{WORD:Method} %{URIPATHPARAM:Uri} HTTP/%{NUMBER:Version}" %{NUMBER:RespContentLength} (?:%{NUMBER:ReqContentLength}|-)
+
+PLURATOMCATLECACY %{TOMLECACY}
