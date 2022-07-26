@@ -3,6 +3,6 @@
 TOMUSERNAME [a-zA-Z\.\@\-\+_%]+
 TOMUSER %{TOMUSERNAME}
 
-TOMLECACY %{IPORHOST:Remoteaddr} %{TOMUSER:ident} %{TOMUSER:auth} %{SYSLOG5424SD:Requestdate} "%{WORD:Method} %{URIPATHPARAM:Uri} HTTP/%{NUMBER:Version}" %{NUMBER:RespContentLength} (?:%{NUMBER:ReqContentLength}|-)
+TOMLECACY %{IPORHOST:Remoteaddr} %{TOMUSER:ident} %{TOMUSER:auth} \[%{DATA:Requestdate}\]+ "%{WORD:Method} %{URIPATHPARAM:Uri} HTTP/%{NUMBER:Version}" %{NUMBER:RespContentLength} (?:%{NUMBER:ReqContentLength}|-)
 
 PLURATOMCATLECACY %{TOMLECACY}
