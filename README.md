@@ -33,7 +33,7 @@ logstash for PLURA
 
     yum -y install logstash
 
-### 1.3 Install plugin using date_formatter
+### 1.3 Install plugin for using date_formatter
 
     /usr/share/logstash/bin/logstash-plugin install logstash-filter-date_formatter
     
