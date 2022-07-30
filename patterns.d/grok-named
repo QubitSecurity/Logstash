@@ -22,7 +22,7 @@ BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clien
 
 # BIND9_QUERYLOG %{BIND9_TIMESTAMP:timestamp} %{BIND9_CATEGORY:CATEGORY}: %{LOGLEVEL:LEVEL}: %{BIND9_QUERYLOGBASE}
 
-BIND9_QUERYLOG  %{BIND9_TIMESTAMP:timestamp} queries: info: client @%{DATA:clientdata} %{IPV4:clientip}#%{BASE10NUM:clientport} \(%{GREEDYDATA:clientname}\): query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:TYPE} \+ \(%{IPV4:DNS}\)
+BIND9_QUERYLOG  %{BIND9_TIMESTAMP:timestamp} queries: info: client @%{DATA:clientdata} %{IPV4:clientip}#%{BASE10NUM:clientport} \(%{GREEDYDATA:clientname}\): query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:TYPE}(:? %{DATA:FLAGS})? \(%{IPV4:DNS}\)
 
 ###BIND9 %{BIND9_QUERYLOG}
 PLURANAMED %{BIND9_QUERYLOG}
