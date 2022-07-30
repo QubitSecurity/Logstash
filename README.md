@@ -32,6 +32,8 @@ logstash for PLURA
     EOF
 
     yum -y install logstash
+    
+    mkdir /etc/logstash/patterns.d/
 
 ### 1.3 Install plugin for using date_formatter
 
