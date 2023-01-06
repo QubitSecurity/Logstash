@@ -77,7 +77,7 @@ logstash for PLURA
 ##### 3) https://logz.io/blog/grok-pattern-examples-for-log-parsing/
 ##### 4) https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html#command-line-flags
 ##### 5) https://github.com/logstash-plugins/logstash-patterns-core/tree/main/patterns/ecs-v1
-##### 6) https://grokdebug.herokuapp.com/
+##### 6) https://grokdebugger.com/
 ##### 7) https://jsoneditoronline.org/
 
 #### X.2 Date format
