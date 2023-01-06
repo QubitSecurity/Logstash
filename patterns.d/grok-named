@@ -15,7 +15,7 @@ BIND9_CATEGORY (?:queries)
 
 #BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clientport:int} \(%{GREEDYDATA:clientname}\): view internal: query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:type}(:? %{DATA:flags})? \(%{IP:DNS}\)
 
-BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clientport:int} \(%{GREEDYDATA:clientname}\): view internal: query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:TYPE}(:? %{DATA:FLAGS})? \(%{IP:DNS}\)
+BIND9_QUERYLOGBASE client(:? @0x(?:[0-9A-Fa-f]+))? %{IP:clientip}#%{POSINT:clientport:int} \(%{GREEDYDATA:clientname}\): query: %{GREEDYDATA:name} (?<class>IN) %{BIND9_DNSTYPE:TYPE}(:? %{DATA:FLAGS})? \(%{IP:DNS}\)
 
 # for query-logging category and severity are always fixed as "queries: info: "
 ###BIND9_QUERYLOG %{BIND9_TIMESTAMP:timestamp} %{BIND9_CATEGORY:[bind][log][category]}: %{LOGLEVEL:[log][level]}: %{BIND9_QUERYLOGBASE}
