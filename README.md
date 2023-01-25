@@ -68,7 +68,7 @@ logstash for PLURA
     INSERT INTO dept_manager(emp_no, dept_no, from_date, to_date) VALUES(120022, 'd009', '1984-12-31', '1988-10-17');
 
 
-## X. Reference
+## X. Useful Links
 
 #### X.1 Grok & Debug
 
