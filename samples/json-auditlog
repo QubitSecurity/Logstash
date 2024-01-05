@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2024-01-05T16:01:01.984545+09:00",
+  "programname": "audispd",
+  "hostname": "Linux",
+  "syslogtag": "audispd:",
+  "pri": "14",
+  "pri-text": "user.info",
+  "syslogfacility": "1",
+  "syslogfacility-text": "user",
+  "syslogseverity": "6",
+  "syslogseverity-text": "info",
+  "msg": "node=QA-sqlmap type=CRED_DISP msg=audit(1704438061.983:21876): pid=28612 uid=0 auid=0 ses=3070 subj=system_u:system_r:crond_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_unix acct=\"root\" exe=\"/usr/sbin/crond\" hostname=? addr=? terminal=cron res=success'"
+}
