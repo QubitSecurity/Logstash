@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2023-12-14T09:19:44.161537+09:00",
+  "programname": "wlceventd",
+  "hostname": "AccessPoint",
+  "syslogtag": "wlceventd:",
+  "pri": "13",
+  "pri-text": "user.notice",
+  "syslogfacility": "1",
+  "syslogfacility-text": "user",
+  "syslogseverity": "5",
+  "syslogseverity-text": "notice",
+  "msg": " wlceventd_proc_event(508): eth6: Disassoc 28:C2:DD:32:4E:00, status: 0, reason: Disassociated because sending station is leaving (or has left) BSS (8), rssi:0"
+}
