@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2023-12-14T09:20:44.198616+09:00",
+  "programname": "ARP",
+  "hostname": "switch",
+  "syslogtag": "ARP/4/ARP_IPCONFLICT_TRAP:",
+  "pri": "188",
+  "pri-text": "local7.warning",
+  "syslogfacility": "23",
+  "syslogfacility-text": "local7",
+  "syslogseverity": "4",
+  "syslogseverity-text": "warning",
+  "msg": "OID 1.3.6.1.4.1.2011.5.25.123.2.6 ARP detects IP conflict. (IP address=1.1.1.1, Local interface=GigabitEthernet0/0/2, Local MAC=000c-2985-0000, Local vlan=1, Local CE vlan=0, Receive interface=GigabitEthernet0/0/2, Receive MAC=000c-2933-0000, Receive vlan=1, Receive CE vlan=0, IP conflict type=Remote IP conflict)."
+}
