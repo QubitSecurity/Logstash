@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2024-01-05T16:01:01.973128+09:00",
+  "programname": "run-parts(",
+  "hostname": "Linux",
+  "syslogtag": "run-parts(/etc/cron.hourly)[28623]:",
+  "pri": "77",
+  "pri-text": "cron.notice",
+  "syslogfacility": "9",
+  "syslogfacility-text": "cron",
+  "syslogseverity": "5",
+  "syslogseverity-text": "notice",
+  "msg": "finished 0anacron"
+}
