@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2024-01-06T10:37:29.532128+09:00",
+  "programname": "xntpd",
+  "hostname": "Juniper",
+  "syslogtag": "xntpd[6472]:",
+  "pri": "99",
+  "pri-text": "ntp.err",
+  "syslogfacility": "12",
+  "syslogfacility-text": "ntp",
+  "syslogseverity": "3",
+  "syslogseverity-text": "err",
+  "msg": " NTP Server 192.168.000.90 is Unreachable"
+}
