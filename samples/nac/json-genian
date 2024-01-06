@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2024-01-05T16:54:52.521436+09:00",
+  "programname": "16",
+  "hostname": "2024-01-05",
+  "syslogtag": "16:",
+  "pri": "30",
+  "pri-text": "daemon.info",
+  "syslogfacility": "3",
+  "syslogfacility-text": "daemon",
+  "syslogseverity": "6",
+  "syslogseverity-text": "info",
+  "msg": "54:33 INFO 116 192.168.000.17 192.168.000.33 00:E0:4C:68:02:00 사용자인증 실패. ID='0000052', BY='Agent', ERRMSG='LOCAL(7:MACLIMITEXCEED)' NONE"
+}
