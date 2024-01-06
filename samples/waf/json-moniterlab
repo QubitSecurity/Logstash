@@ -1,0 +1,15 @@
+{"ceelog":
+  {"timegenerated":"2023-12-29T17:20:59.461158+09:00",
+    "programname":"DETECT|||2023-12-29",
+    "hostname":"192.168.000.249",
+    "syslogtag":"DETECT|||2023-12-29",
+    "pri":"13",
+    "pri-text":"user.notice",
+    "syslogfacility":"1",
+    "syslogfacility-text":"user",
+    "syslogseverity":"5",
+    "syslogseverity-text":"notice",
+    "msg":
+  " 17:21:56|||222.119.000.145|||53990|||192.168.000.14|||443|||개인 정보 유출 탐지|||[주민 등록 번호 - 대한 민국: 900227#######,900227#######,900227#######,900227#######]|||탐지|||중간|||도메인사이트|||19|||https|||192.168.000.249|||v5.0|||Personal Information Leakage|||test.or.kr|||389|||0.0.0.0|||POST /server/test.aspx HTTP/1.1#015#012Content-Type: application/x-www-form-urlencoded#015#012User-Agent: ReportDesigner#015#012RDClient: RD.Viewer#015#012RDFile: %47%75%6D%6A%69%6E%36%5F%53%70%65%63%69%61%6C%32%30%31%38%2E%6D%72%64#015#012RDID: 358e1475-f7a9-4dfe-8451-7e1448961980#015#012Host: test.or.kr#015#012Content-Length: 451#015#012Cache-Control: no-cache#015#012Cookie: ASP.NET_SessionId=055#015#012#015#012|||WAF"
+  }
+}
