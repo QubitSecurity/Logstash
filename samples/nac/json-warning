@@ -1,0 +1,13 @@
+{
+  "timegenerated": "2024-01-05T16:25:13.506311+09:00",
+  "programname": "16",
+  "hostname": "nac",
+  "syslogtag": "16:",
+  "pri": "28",
+  "pri-text": "daemon.warning",
+  "syslogfacility": "3",
+  "syslogfacility-text": "daemon",
+  "syslogseverity": "4",
+  "syslogseverity-text": "warning",
+  "msg": "24:54 WARN 108 192.168.000.17 192.168.000.174 24:F5:AA:E6:64:00 패치 검색 실패. ERRMSG='패치 검색 실패. (Result = 0x8024402C - WU_E_PT_WINHTTP_NAME_NOT_RESOLVED - Winhttp SendRequest/ReceiveResponse failed with 0x2ee7 error. Either the proxy server or target server name can not be resolved. Corresponding to ERROR_WINHTTP_NAME_NOT_RESOLVED. Stop/Restart service or reboot the machine if you see this error frequently.)' NONE"
+}
